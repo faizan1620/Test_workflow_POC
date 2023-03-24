@@ -2,6 +2,7 @@ name: Workflow Test POC
 
 on:
   workflow_dispatch:
+    inputs:
       environment:
         description: 'Deployment Environment'
         required: true
