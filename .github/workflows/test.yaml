@@ -7,6 +7,12 @@ on:
         description: 'Deployment Environment'
         required: true
         default: 'development'
+        type: choice
+        options:
+          - demo
+          - staging
+          - production
+          - development
 
 permissions:
  id-token: write # required to use OIDC authentication
