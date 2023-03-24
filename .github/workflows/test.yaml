@@ -2,9 +2,10 @@ name: Workflow Test POC
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - 'main'
+      environment:
+        description: 'Deployment Environment'
+        required: true
+        default: 'development'
 
 permissions:
  id-token: write # required to use OIDC authentication
